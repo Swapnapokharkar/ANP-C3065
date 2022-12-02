@@ -7,7 +7,6 @@ public class GameService
 	public void getCityNameService() 
 	{
 		GameDAO GameDAOobj=new GameDAO();
-		
 		GameDAOobj.getCityName();
 	}
 }
