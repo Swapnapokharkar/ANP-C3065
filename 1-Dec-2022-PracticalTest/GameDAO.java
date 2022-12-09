@@ -4,9 +4,12 @@ public class GameDAO
 {
 	public String cityName[]= {"CHENNAI","MUMBAI","DELHI","KOLKATTA","HYDERABAD"};
 	
-	public String[] getCityName()
+	public void getCityName()
 	{
-		return getCityName;
+		for (int i=0;i<cityName.length;i++) 
+		{
+			System.out.println(cityName[i]);
+		}
 	}
 }
 
