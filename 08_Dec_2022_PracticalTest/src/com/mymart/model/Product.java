@@ -45,10 +45,13 @@ public class Product {
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (this == null)    
+        if (obj == null)    
 		return false;
-		return false;
-		
+        if(getClass()!=obj.getClass()) 
+        	return false;
+		Product other=(Product)obj;
+		return productId==other.productId && Objects.equals(ProductName, obj)
+				&& Double.doubleToLongBits(productPrice);
 
    
     }
